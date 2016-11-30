@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Swift</title>
+	<link rel="stylesheet" href="../bootstrap.css">
+</head>
+<body>
+	<div class="container">
+		<div id="header">
+			
+		</div> <!-- header -->
+		<div class="bc-docs-section">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="bs-component">
+						<ul class="breadcrumb">
+							<li><a href="#">Swift</a></li>
+						</ul>
+					</div><!-- bs-component -->
+				</div><!-- col-lg-4 -->
+				<div class="col-lg-12">
+					<div class="page-header">
+						<h1 id="container">Swift</h1>
+					</div>
+					<div class="bs-component">
+						<div class="jumbotron">
+							<h1>Swiftページ</h1>
+							<p>Swiftに関するページ</p>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Articles</h3>
+							</div>
+							<div class="panel-body">
+								<ul>
+									<li><a href="">article1</a></li>
+									<li><a href="">article2</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div><!-- bc-docs-section -->
+
+		<div id="footer">
+			
+		</div> <!-- footer -->
+	</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="../bootstrap.js"></script>
+	<script type="text/javascript">
+		$('.bs-component [data-toggle="popover"]').popover();
+		$('.bs-component [data-toggle="tooltip"]').tooltip();
+	</script>
+	<script>
+		$("#header").load("header.html");
+		$("#footer").load("footer.html");
+	</script>
+</body>
+</html>

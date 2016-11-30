@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
 	<style type="text/css">
 		body { padding-top: 80px; }
 		@media ( min-width: 768px ) {
@@ -59,13 +59,13 @@
 					</div>
 					<div class="navbar-collapse collapse" id="navbar-main">
 						<ul class="nav navbar-nav">
-							<li><a href="/">HOME PAGE</a></li>
+							<li><a href="index.html">HOME PAGE</a></li>
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">categories <span class="caret"></span></a>
 								<ul class="dropdown-menu" role="menu">
-									<li><a href="#">Java</a></li>
-									<li><a href="#">Swift</a></li>
-									<li><a href="#">JavaScript</a></li>
+									<li><a href="html/java.html">Java</a></li>
+									<li><a href="html/swift.html">Swift</a></li>
+									<li><a href="html/javascript.html">JavaScript</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -77,42 +77,36 @@
 		<div class="bc-docs-section">
 			<div class="row">
 				<div class="col-lg-12">
-					<div class="bs-component">
-						<ul class="breadcrumb">
-							<li><a href="#">HOME PAGE</a></li>
-						</ul>
-					</div><!-- bs-component -->
-				</div><!-- col-lg-4 -->
-				<div class="col-lg-12">
 					<div class="page-header">
 						<h1 id="container">HOME PAGE</h1>
 					</div>
 					<div class="bs-component">
 						<div class="jumbotron">
-							<h1>ようこそ</h1>
-							<p>ジャンボトロンの中身の文章はここに記述.</p>
+							<h1>ブログを一から作ってみた。</h1>
+							<p>なんか文章を書く。</p>
 						</div>
 					</div>
 				</div>				
 			</div>
 		</div><!-- bc-docs-section -->
-
-		<h2 id="nav-pills">Categories</h2>
-		<div class="bs-component">
-			<ul class="nav nav-pills">
-				<li><a href="#">Java</a></li>
-				<li><a href="#">Swift</a></li>
-				<li><a href="#">JavaScript</a></li>
-			</ul><!-- nav nav-pills -->
-		</div><!-- bs-component -->
-
 		<footer>
+			<h2 id="nav-pills">Categories</h2>
+			<div class="bs-component">
+				<ul class="nav nav-pills">
+				<li><a href="html/java.html">Java</a></li>
+					<li><a href="html/swift.html">Swift</a></li>
+					<li><a href="html/javascript.html">JavaScript</a></li>
+				</ul><!-- nav nav-pills -->
+			</div><!-- bs-component -->
 			<p>©︎choU,All rights reserved.</p>
 		</footer><!--footer-->
 	</div>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="../js/bootstrap.min.js"></script>
-
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="bootstrap.js"></script>
+	<script>
+		$("#header").load("html/header.html");
+		$("#footer").load("html/footer.html");
+	</script>
 	<script type="text/javascript">
 		$('.bs-component [data-toggle="popover"]').popover();
 		$('.bs-component [data-toggle="tooltip"]').tooltip();
